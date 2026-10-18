@@ -1,6 +1,6 @@
-# ***************************************
+# *********************************************************************************************************************
 #                                                   DIRECTORIOS
-# ***************************************
+# *********************************************************************************************************************
 import os
 from pathlib import Path
 # Este obtiene la ruta del usuario actual
@@ -23,13 +23,14 @@ DIR_HORA_EJECUCION = DIR_LOG / "tiempo_ejecucion.txt"
 DIR_STATUS_USR_LOG = DIR_LOG / "estatus_usuarios.txt"
 
 DIR_DESCARGAS = USER_HOME / "Downloads"
+RUTA_ARCHIVOS = Path(r"C:\Py_drivers\archivos")
 
 # Logs de servicios dinámicos
 DIR_LOGS_SERVICIOS = DIR_PROYECT / "logs_servicios"
 DIR_LOGS_SERVICIOS_CSV = DIR_LOGS_SERVICIOS / "estatus_servicios.csv"
 
 # Archivo de control
-ARCHIVO_CONTROL_BNW2 = DIR_PROYECT / "Casos_Regresion_BNW2.txt"
+ARCHIVO_CONTROL = DIR_PROYECT / "Casos_Regresion.txt"
 
 DIR_UTILERIAS = Path(r"C:\Py_drivers")
 DIR_ORACLE = DIR_UTILERIAS / "util" / "instantclient_21_9"
@@ -39,10 +40,10 @@ DIR_AZURE_PROPERTIES = DIR_UTILERIAS / "util" / "temp.properties"
 XML_REGRESION = 'Regresion Automatizada'
 
 
-# ***************************************
+# *********************************************************************************************************************
 #                                                       URLS
-# ***************************************
+# *********************************************************************************************************************
 URL_SCRIPT_LABS = "https://labs.hendri.me/"
-URL_QA_PRACTIVE = "https://www.qapractice.com/"
+URL_QA_PRACTICE = "https://www.qapractice.com/practice-login-form"
 URL_UPEX_DOJO = "https://dojo.upexgalaxy.com/login"
 XML_REGRESION_CORE = 'Regresion Automatizada'
