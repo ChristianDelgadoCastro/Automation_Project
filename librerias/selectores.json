@@ -1,0 +1,536 @@
+{
+  "ipt_usuario_SL": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "email",
+      "class": "form-input ",
+      "text": "",
+      "placeholder": "Enter your email",
+      "name": "Email Address",
+      "context": {
+        "prev_text": "Email Address",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 798,
+        "y": 744,
+        "width": 310,
+        "height": 40
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[placeholder='Enter your email']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='email']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "Enter your email"
+      },
+      {
+        "type": "css",
+        "selector": "#email"
+      }
+    ]
+  },
+  "ipt_contraseña_SL": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "password",
+      "class": "form-input ",
+      "text": "",
+      "placeholder": "Enter your password",
+      "name": "Password",
+      "type": "password",
+      "context": {
+        "prev_text": "Enter your password",
+        "next_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 1008,
+        "y": 477,
+        "width": 350,
+        "height": 40
+      },
+      "strictness": 0.65
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//*[@id='password']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "Enter your password"
+      },
+      {
+        "type": "css",
+        "selector": "[placeholder='Enter your password']"
+      },
+      {
+        "type": "css",
+        "selector": "#password"
+      }
+    ]
+  },
+  "btn_ingresar_SL": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "btnIngresar",
+      "class": "btn primary auth-submit-btn",
+      "text": "Ingresar",
+      "placeholder": null,
+      "name": "Sign In →",
+      "type": "submit",
+      "context": {
+        "prev_text": ""
+      },
+      "rect": {
+        "x": 798,
+        "y": 696,
+        "width": 310,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Sign In →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Sign In"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[contains(@class, 'auth-submit-btn')]"
+      }
+    ]
+  },
+  "btn_logout_SL": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "",
+      "class": "btn secondary",
+      "text": "Logout",
+      "placeholder": "",
+      "name": "",
+      "type": "submit",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "Hello, standard_user@example.com",
+        "parent_tag": "nav"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//nav/button[contains(@class, 'secondary')]"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Logout"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Logout"
+      }
+    ]
+  },
+  "ipt_usuario_QAP": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "login-email",
+      "class": "form-control-lg form-control",
+      "type": "email ",
+      "text": "",
+      "placeholder": "Enter your email",
+      "name": "Enter your email",
+      "context": {
+        "prev_text": "Email Address",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 798,
+        "y": 744,
+        "width": 310,
+        "height": 40
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[placeholder='Enter your email']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='login-email']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "Enter your email"
+      },
+      {
+        "type": "css",
+        "selector": "#login-email"
+      }
+    ]
+  },
+  "ipt_contraseña_QAP": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "login-password",
+      "class": "form-control-lg form-control",
+      "text": "",
+      "placeholder": "Enter your password",
+      "name": "Password",
+      "type": "password",
+      "context": {
+        "prev_text": "Password",
+        "next_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 1008,
+        "y": 477,
+        "width": 350,
+        "height": 40
+      },
+      "strictness": 0.65
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//*[@id='login-password']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "Enter your password"
+      },
+      {
+        "type": "css",
+        "selector": "[placeholder='Enter your password']"
+      },
+      {
+        "type": "css",
+        "selector": "#login-password"
+      }
+    ]
+  },
+  "btn_ingresar_QAP": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "login-submit",
+      "class": "btn primary auth-submit-btn",
+      "text": "Ingresar",
+      "placeholder": null,
+      "name": "Sign In →",
+      "type": "submit",
+      "context": {
+        "prev_text": ""
+      },
+      "rect": {
+        "x": 798,
+        "y": 696,
+        "width": 310,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Sign in"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Sign In"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='login-submit']"
+      }
+    ]
+  },
+  "titulo_bienvenida_QAP": {
+    "huella_digital": {
+      "tag": "h1",
+      "id": "",
+      "class": "section-heading mb-3",
+      "text": "The Ultimate Automation Playground",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//h1[contains(@class, 'section-heading')]"
+      },
+      {
+        "type": "get_by_role",
+        "role": "heading",
+        "name": "The Ultimate Automation Playground"
+      },
+      {
+        "type": "get_by_text",
+        "text": "The Ultimate Automation Playground"
+      }
+    ]
+  },
+  "ipt_usuario_DOJO": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "email",
+      "class": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+      "type": "email ",
+      "text": "",
+      "placeholder": "you@example.com",
+      "name": "you@example.com",
+      "context": {
+        "prev_text": "Email",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 798,
+        "y": 744,
+        "width": 310,
+        "height": 40
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[placeholder='you@example.com']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='email']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "you@example.com"
+      },
+      {
+        "type": "css",
+        "selector": "#email"
+      }
+    ]
+  },
+  "ipt_contraseña_DOJO": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "password",
+      "class": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+      "text": "",
+      "placeholder": "Enter your password",
+      "name": "Enter your password",
+      "type": "password",
+      "context": {
+        "prev_text": "Password",
+        "next_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 1008,
+        "y": 477,
+        "width": 350,
+        "height": 40
+      },
+      "strictness": 0.65
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//*[@id='password']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "Enter your password"
+      },
+      {
+        "type": "css",
+        "selector": "[placeholder='Enter your password']"
+      },
+      {
+        "type": "css",
+        "selector": "#password"
+      }
+    ]
+  },
+  "btn_ingresar_DOJO": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "login-submit-button",
+      "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full",
+      "text": "Sign in",
+      "placeholder": null,
+      "name": "login-submit-button",
+      "type": "submit",
+      "context": {
+        "prev_text": ""
+      },
+      "rect": {
+        "x": 798,
+        "y": 696,
+        "width": 310,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Sign in"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Sign in"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='login-submit-button']"
+      }
+    ]
+  },
+  "titulo_bienvenida_DOJO": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "flex items-center gap-2 font-bold text-xl",
+      "text": "UPEX DOJO",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//a[@data-testid='dashboard-logo']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "UPEX DOJO"
+      },
+      {
+        "type": "get_by_text",
+        "text": "UPEX DOJO"
+      }
+    ]
+  },
+  "btn_avatar_user_DOJO": {
+    "huella_digital": {
+      "tag": "span",
+      "id": "",
+      "class": "relative flex shrink-0 overflow-hidden rounded-full h-9 w-9",
+      "text": "TU",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      }
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//span[contains(@class, 'rounded-full') and span[text()='TU']]"
+      },
+      {
+        "type": "get_by_text",
+        "text": "TU"
+      }
+    ]
+  },
+  "btn_logout_DOJO": {
+    "huella_digital": {
+      "tag": "div",
+      "id": "",
+      "class": "relative flex select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer text-destructive focus:text-destructive",
+      "text": "Log out",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "menuitem",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "xpath",
+        "selector": "//*[@data-testid='nav-logout-button']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "menuitem",
+        "name": "Log out"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Log out"
+      }
+    ]
+  }
+}
