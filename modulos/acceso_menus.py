@@ -39,3 +39,50 @@ def navegacion_menu_qapractice(page, menu, nombre_log, hora_ejecucion):
         error_msg = f"err-> servicios() - Fallo al navegar al menu {menu}: {str(e)}\n."
         escribo_log(nombre_log, f"---> {error_msg}\n")
         raise e
+
+
+def seleccionar_actividad_qapractice(page, actividad, nombre_log, hora_ejecucion):
+    try:
+        if not actividad:
+            raise ValueError("El parámetro 'actividad' no puede estar vacío.")
+
+        actividad_limpia = actividad.lower().strip()
+
+        # Mapeo de actividades hacia las llaves de tus selectores (las tarjetas)
+        mapa_actividades = {
+            "login automation": "btn_practice_login_form",
+            "web form automation": "btn_practice_forms",
+            "e-comerce automation": "btn_practice_ecommerce",
+            "flight booking automation": "btn_flight_booking",
+            "ui element automation": "btn_practice_ui_elements",
+            "xpath practice for selenium": "btn_selenium_xpath_guide",
+            "forgot password": "btn_forget_password",
+            "registration form": "btn_register",
+            "rest api playground": "btn_api_playground",
+        }
+
+        elemento = mapa_actividades.get(actividad_limpia)
+        if not elemento:
+            opciones = ", ".join(mapa_actividades.keys())
+            raise ValueError(f"Actividad no reconocida: '{actividad}'. Opciones válidas: [{opciones}]")
+
+        selector_actual = selectores.get(elemento)
+        if not selector_actual:
+            raise KeyError(f"No se encontraron selectores configurados para el identificador '{elemento}'.")
+
+        elemento_actividad = localizar_elemento(page, elemento, selector_actual, nombre_log, hora_ejecucion)
+        if not elemento_actividad:
+            raise TimeoutError(f"No se pudo localizar la tarjeta de actividad '{actividad}' en la página actual.")
+
+        # Hacemos scroll hacia el elemento si está fuera del viewport
+        elemento_actividad.scroll_into_view_if_needed(timeout=5000)
+
+        # Ejecutamos el clic
+        elemento_actividad.click()
+        page.wait_for_timeout(500)
+
+    except Exception as e:
+        error_msg = f"err-> seleccionar_actividad_qapractice() - Fallo al seleccionar la actividad {actividad}: {str(e)}\n."
+        escribo_log(nombre_log, f"---> {error_msg}\n")
+        raise e
+

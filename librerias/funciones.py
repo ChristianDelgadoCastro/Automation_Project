@@ -12,7 +12,7 @@ from datetime import datetime
 from datetime import timedelta
 
 import lxml.etree as et
-import oracledb
+# import oracledb
 import pyodbc
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from reportlab.graphics.charts.legends import Legend

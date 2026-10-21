@@ -2,9 +2,10 @@ from behave import step
 
 from librerias.funciones import insumo_x_linea, escribo_log, save_evidence, lista_screenshot, \
     lista_pasos_descripcion, existe_error_inesperado
+from modulos.acceso_menus import navegacion_menu_qapractice
 from modulos.base import obtener_catalogo_matriz
 from modulos.login import login_script_labs, logout_script_labs, login_qa_practice, logout_qa_practice, login_dojo, \
-    logout_dojo
+    logout_dojo, abrir_pagina
 
 SITIOS_CONFIG = {
     "Script Labs": {"key": "sl",
@@ -78,3 +79,19 @@ def step_login_dojo(context, perfil):
 def step_cerrar_sesion_dojo(context):
     logout_dojo(context.page, context.nombre_log, context.hora_ejecucion)
     context.sesiones_activas['dojo'] = False
+
+
+@step('Abro la pagina de "{pagina}"')
+def step_abrir_pagina(context, pagina):
+    try:
+        abrir_pagina(context.page, pagina, context.nombre_log, context.hora_ejecucion)
+        escribo_log(context.nombre_log, f"---> Ingrese con exito a la pagina '{pagina}'\n")
+        texto_captura = f"Entro a la pagina '{pagina}'"
+        save_evidence(context.page, context.test_name, texto_captura, context.hora_ejecucion)
+        context.lista_screenshot.extend(lista_screenshot(texto_captura))
+        context.lista_pasos_descripcion.extend(lista_pasos_descripcion(texto_captura))
+    except Exception as err:
+        escribo_log(context.nombre_log, "---> step_quitar_fav_todas() " + f"err={type(err).__name__} {str(err)}\n")
+        rastreo = f"err={type(err).__name__}" + f" [step_quitar_fav_todas] {str(err)}"
+        existe_error_inesperado(context.page, rastreo, context.test_name, context.nombre_log, context.hora_ejecucion)
+        raise
