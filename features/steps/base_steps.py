@@ -52,7 +52,13 @@ def click_en_botones(context, boton):
             When Doy click en el boton "Aplicar filtros"
             And Doy click en el boton "Continuar"
     """
-    click_boton(context.page, boton, context.nombre_log, context.hora_ejecucion)
+    try:
+        click_boton(context.page, boton, context.nombre_log, context.hora_ejecucion)
+    except Exception as err:
+        escribo_log(context.nombre_log, "---> click_en_botones() " + f"err={type(err).__name__} {str(err)}\n")
+        rastreo = f"err={type(err).__name__}" + f" [click_en_botones] {str(err)}"
+        existe_error_inesperado(context.page, rastreo, context.test_name, context.nombre_log, context.hora_ejecucion)
+        raise
 
 
 @step('Valido que el titulo diga "{texto_esperado}"')
@@ -80,7 +86,7 @@ def step_validar_titulo(context, texto_esperado):
                 And Valido que el titulo diga "Operación Rechazada"
         """
     validar_titulo(context.page, texto_esperado, context.nombre_log, context.hora_ejecucion)
-    evidencia = "Validar transaccion exitosa"
+    evidencia = f"Validar titulo '{texto_esperado}'"
     save_evidence(context.page, context.test_name, evidencia, context.hora_ejecucion)
     context.lista_screenshot.extend(lista_screenshot(evidencia))
     context.lista_pasos_descripcion.extend(lista_pasos_descripcion(evidencia))

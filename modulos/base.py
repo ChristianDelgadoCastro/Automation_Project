@@ -32,17 +32,12 @@ def click_boton(page, boton, nombre_log, hora_ejecucion):
             diccionario `mapa_botones` de esta función como en el archivo `selectores.json`.
         """
     mapa_botones = {
-        "aplicar filtros": "btn_aplicar_filtros",
-        "enviar ahora": "btn_enviar_ahora",
-        "enviar aceptar": "btn_aceptar",
-        "aceptar_asign_tdn": "btn_aceptar_asign",
-        "enviar": "btn_enviar",
-        "aceptar altas": "btn_aceptar_altas",
-        "eliminar cuentas seleccionadas": "btn_eliminar_ctas_sel",
-        "continuar": "btn_continuar",
-        "aceptar": "aceptar_button",
-        "enviar_tdn": "btn_enviar_tdn",
-        "enviar nomina": "btn_continuar_pago_nom",
+        "registrar ahora qap": "link_login_register",
+        "registrar qap": "btn_register_submit",
+        "buscar vuelos": "btn_flight_search",
+        "continuar a detalles de pasajeros": "btn_flight_continue_to_passengers",
+        "continuar a pago": "btn_flight_continuar_pago",
+        "pagar y continuar reservacion": "btn_flight_reservar",
     }
 
     boton_limpio = boton.lower()
@@ -85,10 +80,11 @@ def validar_titulo(page, texto_esperado, nombre_log, hora_ejecucion):
             el contenido esté estrictamente presente en el nodo del DOM.
         """
     lista_titulos = [
-        "#txtSuccess1",
-        "#txtSuccessManco",
-        "#txtSuccess1Autorizar",
-        "#txtTitleAviso",
+        "#login-success",
+        "#login-error",
+        "#register-success",
+        "#register-error",
+        "#flight-booking-success",
     ]
 
     selectores_visibles = [f"{selector}:visible" for selector in lista_titulos]

@@ -306,6 +306,281 @@
       }
     ]
   },
+  "ipt_register_email_QAP": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "register-email",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "Enter your email",
+      "name": "",
+      "type": "email",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "Enter your email"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "register-email"
+      },
+      {
+        "type": "css",
+        "selector": "#register-email"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='register-email']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "textbox",
+        "name": "Enter your email"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='email'].form-control"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@type='email' and @placeholder='Enter your email']"
+      }
+    ]
+  },
+  "ipt_register_password_QAP": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "register-password",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "Create a password",
+      "name": "",
+      "type": "password",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "Create a password"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "register-password"
+      },
+      {
+        "type": "css",
+        "selector": "#register-password"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='register-password']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "textbox",
+        "name": "Create a password"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='password']#register-password"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@type='password' and @placeholder='Create a password']"
+      }
+    ]
+  },
+  "ipt_register_confirm_password_QAP": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "register-confirm-password",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "Confirm your password",
+      "name": "",
+      "type": "password",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "Confirm your password"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "register-confirm-password"
+      },
+      {
+        "type": "css",
+        "selector": "#register-confirm-password"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='register-confirm-password']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "textbox",
+        "name": "Confirm your password"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='password']#register-confirm-password"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@type='password' and @placeholder='Confirm your password']"
+      }
+    ]
+  },
+  "link_login_register": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "login-register",
+      "class": "",
+      "text": "Register now",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "link",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Register now"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "login-register"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Register now"
+      },
+      {
+        "type": "css",
+        "selector": "#login-register"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='login-register']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/register']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/register']"
+      }
+    ]
+  },
+  "btn_register_submit": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "register-submit",
+      "class": "mt-3 w-100 btn btn-primary",
+      "text": "Register",
+      "placeholder": "",
+      "name": "",
+      "type": "submit",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "form"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Register"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "register-submit"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Register"
+      },
+      {
+        "type": "css",
+        "selector": "#register-submit"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='register-submit']"
+      },
+      {
+        "type": "css",
+        "selector": "button[type='submit'].btn-primary"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[@type='submit' and contains(text(), 'Register')]"
+      }
+    ]
+  },
   "ipt_usuario_DOJO": {
     "huella_digital": {
       "tag": "input",
@@ -530,6 +805,1556 @@
       {
         "type": "get_by_text",
         "text": "Log out"
+      }
+    ]
+  },
+  "btn_menu_practice_sites": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "nav-link-modern nav-link",
+      "text": "Practice Sites",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 213,
+        "y": 24,
+        "width": 136,
+        "height": 48
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Practice Sites"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Practice Sites"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[normalize-space()='Practice Sites']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[contains(text(), 'Practice Sites')]"
+      },
+      {
+        "type": "css",
+        "selector": "a.nav-link-modern.nav-link"
+      },
+      {
+        "type": "css",
+        "selector": "a.nav-link-modern"
+      }
+    ]
+  },
+  "btn_menu_interview_prep": {
+    "huella_digital": {
+      "tag": "a",
+      "id": null,
+      "class": "nav-link-modern nav-link",
+      "text": "Interview Prep",
+      "placeholder": null,
+      "name": "Interview Prep",
+      "type": null,
+      "context": {
+        "prev_text": "Practice Sites"
+      },
+      "rect": {
+        "x": 958,
+        "y": 696,
+        "width": 140,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Interview Prep"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Interview Prep"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/interview']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/interview']"
+      }
+    ]
+  },
+  "btn_menu_about": {
+    "huella_digital": {
+      "tag": "a",
+      "id": null,
+      "class": "nav-link-modern nav-link",
+      "text": "About",
+      "placeholder": null,
+      "name": "About",
+      "type": null,
+      "context": {
+        "prev_text": "Interview Prep"
+      },
+      "rect": {
+        "x": 1108,
+        "y": 696,
+        "width": 80,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "About"
+      },
+      {
+        "type": "get_by_text",
+        "text": "About"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/AboutPage']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/AboutPage']"
+      }
+    ]
+  },
+  "btn_menu_contact": {
+    "huella_digital": {
+      "tag": "a",
+      "id": null,
+      "class": "nav-link-modern nav-link",
+      "text": "Contact",
+      "placeholder": null,
+      "name": "Contact",
+      "type": null,
+      "context": {
+        "prev_text": "About"
+      },
+      "rect": {
+        "x": 1198,
+        "y": 696,
+        "width": 90,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Contact"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Contact"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/contact']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/contact']"
+      }
+    ]
+  },
+  "btn_practice_login_form": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/practice-login-form']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/practice-login-form']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_practice_forms": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/practice-forms']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/practice-forms']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_practice_ecommerce": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/practice-ecommerece-website']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/practice-ecommerece-website']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_flight_booking": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/flight-booking-scenarios']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/flight-booking-scenarios']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_practice_ui_elements": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/practice-different-ui-elements']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/practice-different-ui-elements']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_selenium_xpath_guide": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/SeleniumXPathGuide']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/SeleniumXPathGuide']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_forget_password": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/forget-password']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/forget-password']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_register": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/register']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/register']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "btn_api_playground": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "mt-auto align-self-start fw-bold btn btn-primary",
+      "text": "Start practising →",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "a[href='/api-playground']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/api-playground']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Start practising →"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Start practising →"
+      }
+    ]
+  },
+  "sel_flight_from": {
+    "huella_digital": {
+      "tag": "select",
+      "id": "flight-from",
+      "class": "form-select",
+      "text": "Select City New York London Tokyo Paris Sydney Mumbai Delhi Dubai Singapore",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "combobox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-from"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-from"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-from']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "combobox",
+        "name": ""
+      },
+      {
+        "type": "css",
+        "selector": "select.form-select#flight-from"
+      }
+    ]
+  },
+  "sel_flight_to": {
+    "huella_digital": {
+      "tag": "select",
+      "id": "flight-to",
+      "class": "form-select",
+      "text": "Select City New York London Tokyo Paris Sydney Mumbai Delhi Dubai Singapore",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "combobox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-to"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-to"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-to']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "combobox",
+        "name": ""
+      },
+      {
+        "type": "css",
+        "selector": "select.form-select#flight-to"
+      }
+    ]
+  },
+  "ipt_flight_departure_date": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-departure-date",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "date",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-departure-date"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-departure-date"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-departure-date']"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='date']#flight-departure-date"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@type='date' and @id='flight-departure-date']"
+      }
+    ]
+  },
+  "ipt_flight_return_date": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-return-date",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "date",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-return-date"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-return-date"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-return-date']"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='date']#flight-return-date"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@type='date' and @id='flight-return-date']"
+      }
+    ]
+  },
+  "ipt_flight_passengers": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-passengers",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "number",
+      "role": "spinbutton",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-passengers"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-passengers"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-passengers']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "spinbutton",
+        "name": ""
+      },
+      {
+        "type": "css",
+        "selector": "input[type='number']#flight-passengers"
+      }
+    ]
+  },
+  "sel_flight_class": {
+    "huella_digital": {
+      "tag": "select",
+      "id": "flight-class",
+      "class": "form-select",
+      "text": "Economy Business First",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "combobox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-class"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-class"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-class']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "combobox",
+        "name": ""
+      },
+      {
+        "type": "css",
+        "selector": "select.form-select#flight-class"
+      }
+    ]
+  },
+  "chckb_flight_one_way": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-one-way",
+      "class": "form-check-input",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "checkbox",
+      "role": "checkbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-one-way"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-one-way"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-one-way']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "checkbox",
+        "name": "One Way"
+      },
+      {
+        "type": "get_by_label",
+        "text": "One Way"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='checkbox'].form-check-input"
+      }
+    ]
+  },
+  "btn_flight_search": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "flight-search",
+      "class": "w-100 btn btn-primary btn-lg",
+      "text": "Search Flights",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Search Flights"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-search"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Search Flights"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-search"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-search']"
+      },
+      {
+        "type": "css",
+        "selector": "button[type='button'].btn-primary.btn-lg"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[@type='button' and contains(text(), 'Search Flights')]"
+      }
+    ]
+  },
+  "sel_flight_sort": {
+    "huella_digital": {
+      "tag": "select",
+      "id": "flight-sort",
+      "class": "form-select form-select-sm",
+      "text": "Price: Low to High Price: High to Low Duration: Shortest",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "combobox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-sort"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-sort"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-sort']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "combobox",
+        "name": ""
+      },
+      {
+        "type": "css",
+        "selector": "select.form-select#flight-sort"
+      }
+    ]
+  },
+  "sel_flight_filter_airline": {
+    "huella_digital": {
+      "tag": "select",
+      "id": "flight-filter-airline",
+      "class": "form-select form-select-sm",
+      "text": "All airlines Global Wings Sky High Airlines Air Swift BlueJet AeroLink",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "combobox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-filter-airline"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-filter-airline"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-filter-airline']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "combobox",
+        "name": ""
+      },
+      {
+        "type": "css",
+        "selector": "select.form-select#flight-filter-airline"
+      }
+    ]
+  },
+  "chckb_flight_filter_nonstop": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-filter-nonstop",
+      "class": "form-check-input",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "checkbox",
+      "role": "checkbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-filter-nonstop"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-filter-nonstop"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-filter-nonstop']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "checkbox",
+        "name": "Non-stop only"
+      },
+      {
+        "type": "get_by_label",
+        "text": "Non-stop only"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='checkbox'].form-check-input"
+      }
+    ]
+  },
+  "btn_flight_continue_to_passengers": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "",
+      "class": "btn btn-primary btn-lg",
+      "text": "Continue to passenger details →",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Continue to passenger details →"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-continue-to-passengers"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Continue to passenger details →"
+      },
+      {
+        "type": "css",
+        "selector": "button[data-testid='flight-continue-to-passengers']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[@data-testid='flight-continue-to-passengers']"
+      },
+      {
+        "type": "css",
+        "selector": "button.btn-primary.btn-lg"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[@type='button' and contains(text(), 'Continue to passenger details')]"
+      }
+    ]
+  },
+  "ipt_flight_passenger_name": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-passenger-name",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "Ada Lovelace",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "Ada Lovelace"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-passenger-name"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-passenger-name"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-passenger-name']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "textbox",
+        "name": "Ada Lovelace"
+      },
+      {
+        "type": "css",
+        "selector": "input.form-control#flight-passenger-name"
+      }
+    ]
+  },
+  "ipt_flight_passenger_email": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-passenger-email",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "you@example.com",
+      "name": "",
+      "type": "email",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "you@example.com"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-passenger-email"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-passenger-email"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-passenger-email']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "textbox",
+        "name": "you@example.com"
+      },
+      {
+        "type": "css",
+        "selector": "input[type='email']#flight-passenger-email"
+      }
+    ]
+  },
+  "ipt_flight_passenger_phone": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-passenger-phone",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "+1 555 0100",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "+1 555 0100"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-passenger-phone"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-passenger-phone"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-passenger-phone']"
+      },
+      {
+        "type": "get_by_role",
+        "role": "textbox",
+        "name": "+1 555 0100"
+      },
+      {
+        "type": "css",
+        "selector": "input.form-control#flight-passenger-phone"
+      }
+    ]
+  },
+  "btn_flight_continuar_pago": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "",
+      "class": "btn btn-primary btn-lg",
+      "text": "Continue to payment →",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Continue to payment →"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-continue-to-payment"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Continue to payment →"
+      },
+      {
+        "type": "css",
+        "selector": "button[data-testid='flight-continue-to-payment']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[@data-testid='flight-continue-to-payment']"
+      },
+      {
+        "type": "css",
+        "selector": "button.btn-primary.btn-lg"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[@type='button' and contains(text(), 'Continue to payment')]"
+      }
+    ]
+  },
+  "ipt_flight_card_number": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-card-number",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "4111 1111 1111 1111",
+      "name": "cardNumber",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "4111 1111 1111 1111"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-card-number"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-card-number"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-card-number']"
+      },
+      {
+        "type": "css",
+        "selector": "input[name='cardNumber']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@name='cardNumber']"
+      }
+    ]
+  },
+  "ipt_flight_expiry": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-expiry",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "MM/YY",
+      "name": "expiryDate",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_placeholder",
+        "text": "MM/YY"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-expiry"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-expiry"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-expiry']"
+      },
+      {
+        "type": "css",
+        "selector": "input[name='expiryDate']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@name='expiryDate']"
+      }
+    ]
+  },
+  "ipt_flight_cvv": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "flight-cvv",
+      "class": "form-control",
+      "text": "",
+      "placeholder": "",
+      "name": "cvv",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "#flight-cvv"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-cvv"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-cvv']"
+      },
+      {
+        "type": "css",
+        "selector": "input[name='cvv']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//input[@name='cvv']"
+      }
+    ]
+  },
+  "btn_flight_reservar": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "flight-book",
+      "class": "w-100 btn btn-success btn-lg",
+      "text": "Pay & Confirm Booking",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "button",
+        "name": "Pay & Confirm Booking"
+      },
+      {
+        "type": "get_by_test_id",
+        "test_id": "flight-book"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Pay & Confirm Booking"
+      },
+      {
+        "type": "css",
+        "selector": "#flight-book"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='flight-book']"
+      },
+      {
+        "type": "css",
+        "selector": "button.btn-success.btn-lg"
+      },
+      {
+        "type": "xpath",
+        "selector": "//button[contains(text(), 'Pay & Confirm Booking')]"
       }
     ]
   }

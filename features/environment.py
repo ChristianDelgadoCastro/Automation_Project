@@ -103,20 +103,28 @@ def after_scenario(context, scenario):
     rastreo_error = "Ejecución finalizada"
     estado_xml = "PASS"
     desc_xml = "Test Correcto"
-    # Validacion de estatus, Rastreo y screenshot si falla o truena
-    if scenario.status == "failed":
+
+    algun_paso_fallido = any(str(step.status) == "failed" or step.exception is not None for step in scenario.steps)
+    escenario_fallido = (str(scenario.status) == "failed") or algun_paso_fallido
+
+    if escenario_fallido:
         context.status = "FAILED"
         estado_xml = "FAIL"
         escribo_log(context.nombre_log, f"\n---> El escenario [{scenario.name}] FALLÓ.\n")
-        # Capturamos el error "crudo" de Behave
+
+        # Capturamos el error "crudo" de Behave iterando los pasos
         error_crudo = ""
         for step in scenario.steps:
-            if step.status == "failed":
+            if str(step.status) == "failed" or step.exception is not None:
                 error_crudo = f"Paso fallido: '{step.name}'"
                 if step.exception:
                     error_crudo += f" | Excepción: {str(step.exception).strip()}"
                 break
-        # Prioridad a la funcion de error inesperado
+
+        if not error_crudo and hasattr(scenario, 'error_message') and scenario.error_message:
+            error_crudo = str(scenario.error_message).strip()
+
+        # Prioridad a la función de error inesperado
         if hasattr(context, 'page') and context.page:
             try:
                 existe_error_inesperado(context.page, error_crudo, context.test_name, context.nombre_log,
@@ -124,13 +132,19 @@ def after_scenario(context, scenario):
             except Exception as error_definitivo:
                 rastreo_error = str(error_definitivo).strip()
         else:
-            rastreo_error = error_crudo
+            rastreo_error = error_crudo or "Error desconocido en el escenario"
+
         desc_xml = rastreo_error
+
         if hasattr(context, 'page') and context.page:
-            save_evidence(context.page, context.test_name, "PopUpError", context.hora_ejecucion)
-            context.lista_screenshot.extend(lista_screenshot("PopUpError"))
-            context.lista_pasos_descripcion.extend(lista_pasos_descripcion(f"Error: {rastreo_error}"))
-        # Logica para un rollback si el test fallo a la mitad y se necesita reestablecer
+            try:
+                save_evidence(context.page, context.test_name, "PopUpError", context.hora_ejecucion)
+                context.lista_screenshot.extend(lista_screenshot("PopUpError"))
+                context.lista_pasos_descripcion.extend(lista_pasos_descripcion(f"Error: {rastreo_error}"))
+            except Exception as ev_err:
+                escribo_log(context.nombre_log, f"---> No se pudo guardar evidencia de error: {ev_err}\n")
+
+        # Lógica de rollback / rescate si aplica...
         hay_sesion_activa = any(context.sesiones_activas.values())
         if nombre_scenario in RECOVERY_MAP:
             # Validamos si la sesión realmente llegó a iniciarse con éxito
@@ -141,35 +155,31 @@ def after_scenario(context, scenario):
                 try:
                     # Ejecuta los pasos dinámicamente en el navegador
                     context.execute_steps(RECOVERY_MAP[nombre_scenario])
-                    escribo_log(context.nombre_log,
-                                f"-" * 88 + f"\n---> El entorno ha sido reestablecido correctamente.\n" + "=" * 88 + "\n" + "\n")
-                    # SI EL RESCATE FUE EXITOSO: Tomamos screenshot
+                    escribo_log(context.nombre_log, f"\n---> El entorno ha sido restablecido correctamente.\n")
                     if hasattr(context, 'page') and context.page:
                         save_evidence(context.page, context.test_name, "Rescato_Exitoso", context.hora_ejecucion)
                         context.lista_screenshot.extend(lista_screenshot("Rescato_Exitoso"))
                         context.lista_pasos_descripcion.extend(
                             lista_pasos_descripcion(
-                                "TEST FAIL - Reestablecimiento ejecutado: Entorno restaurado con exito."))
+                                "TEST FAIL - Restablecimiento ejecutado: Entorno restaurado con éxito."))
                 except Exception as error_rescate:
                     escribo_log(context.nombre_log,
-                                f"---> No se pudo completar la restauracion del entorno: {str(error_rescate)}\n")
-                    # Tomar una captura si el mismo rescate falla
+                                f"---> No se pudo completar la restauración del entorno: {str(error_rescate)}\n")
                     if hasattr(context, 'page') and context.page:
                         save_evidence(context.page, context.test_name, "Error_En_Rescato", context.hora_ejecucion)
                         context.lista_screenshot.extend(lista_screenshot("Error_En_Rescato"))
                         context.lista_pasos_descripcion.extend(
                             lista_pasos_descripcion(
-                                f"Incidencia durante la restauracion. \nError: {str(error_rescate)}"))
+                                f"Incidencia durante la restauración. \nError: {str(error_rescate)}"))
             else:
                 escribo_log(context.nombre_log,
-                            f"---> Se omite el reestablecimiento para '{nombre_scenario}' ya que la sesión no logró iniciar.\n")
+                            f"---> Se omite el restablecimiento para '{nombre_scenario}' ya que la sesión no logró iniciar.\n")
         else:
             escribo_log(context.nombre_log,
                         f"---> No hay plan de rescate configurado para: '{nombre_scenario}'. Continuando...\n")
     else:
         context.status = "PASSED"
         escribo_log(context.nombre_log, "---> Testcase PASS\n")
-        # Tomar captura de la pantalla final de éxito
         if hasattr(context, 'page') and context.page:
             save_evidence(context.page, context.test_name, "Test_correcto", context.hora_ejecucion)
             context.lista_screenshot.extend(lista_screenshot("Test_correcto"))
@@ -326,24 +336,28 @@ def after_step(context, step):
     tiempo_step = time.time() - context.step_inicio
     duracion = step.duration if hasattr(step, 'duration') else 0.0
     logging.info(f"Terminó en: {duracion:.2f} segundos")
+
     if hasattr(context, "page"):
         try:
             context.page.locator("#ajaxloader").wait_for(state="hidden", timeout=45000)
         except Exception as e:
             escribo_log(context.nombre_log, f"---> El loader no se ocultó tras 45s: {e}")
+
     if tiempo_step > 5.0:
         escribo_log(context.nombre_log, f"")
-    # si el paso falló mandamos el mensaje de error
-    if step.status == "failed":
-        error_real = str(step.exception)
+
+    # Validación robusta del estatus del paso
+    if str(step.status) == "failed" or step.exception is not None:
+        error_real = str(step.exception) if step.exception else "Error desconocido"
         mensaje_fallo = f"\n[ERROR] El paso '{step.name}' falló:\n{error_real}"
         escribo_log(context.nombre_log, mensaje_fallo)
         print(mensaje_fallo)
+
     # Captura de pantalla para el behavex
     if hasattr(context, 'page') and context.page:
         try:
             nombre_limpio = "".join([c for c in step.name if c.isalnum() or c == ' ']).replace(" ", "_")[:60]
-            estado = "FAIL" if step.status == "failed" else "OK"
+            estado = "FAIL" if (str(step.status) == "failed" or step.exception is not None) else "OK"
             nombre_foto = f"{estado}_{context.step_count:02d}_{nombre_limpio}.png"
             evidence_path_safe = getattr(context, 'evidence_path', 'evidencias')
             os.makedirs(evidence_path_safe, exist_ok=True)
