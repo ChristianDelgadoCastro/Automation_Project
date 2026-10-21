@@ -532,5 +532,173 @@
         "text": "Log out"
       }
     ]
+  },
+  "btn_menu_practice_sites": {
+    "huella_digital": {
+      "tag": "a",
+      "id": "",
+      "class": "nav-link-modern nav-link",
+      "text": "Practice Sites",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 213,
+        "y": 24,
+        "width": 136,
+        "height": 48
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Practice Sites"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Practice Sites"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[normalize-space()='Practice Sites']"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[contains(text(), 'Practice Sites')]"
+      },
+      {
+        "type": "css",
+        "selector": "a.nav-link-modern.nav-link"
+      },
+      {
+        "type": "css",
+        "selector": "a.nav-link-modern"
+      }
+    ]
+  },
+  "btn_menu_interview_prep": {
+    "huella_digital": {
+      "tag": "a",
+      "id": null,
+      "class": "nav-link-modern nav-link",
+      "text": "Interview Prep",
+      "placeholder": null,
+      "name": "Interview Prep",
+      "type": null,
+      "context": {
+        "prev_text": "Practice Sites"
+      },
+      "rect": {
+        "x": 958,
+        "y": 696,
+        "width": 140,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Interview Prep"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Interview Prep"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/interview']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/interview']"
+      }
+    ]
+  },
+  "btn_menu_about": {
+    "huella_digital": {
+      "tag": "a",
+      "id": null,
+      "class": "nav-link-modern nav-link",
+      "text": "About",
+      "placeholder": null,
+      "name": "About",
+      "type": null,
+      "context": {
+        "prev_text": "Interview Prep"
+      },
+      "rect": {
+        "x": 1108,
+        "y": 696,
+        "width": 80,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "About"
+      },
+      {
+        "type": "get_by_text",
+        "text": "About"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/AboutPage']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/AboutPage']"
+      }
+    ]
+  },
+  "btn_menu_contact": {
+    "huella_digital": {
+      "tag": "a",
+      "id": null,
+      "class": "nav-link-modern nav-link",
+      "text": "Contact",
+      "placeholder": null,
+      "name": "Contact",
+      "type": null,
+      "context": {
+        "prev_text": "About"
+      },
+      "rect": {
+        "x": 1198,
+        "y": 696,
+        "width": 90,
+        "height": 38
+      }
+    },
+    "selectores": [
+      {
+        "type": "get_by_role",
+        "role": "link",
+        "name": "Contact"
+      },
+      {
+        "type": "get_by_text",
+        "text": "Contact"
+      },
+      {
+        "type": "xpath",
+        "selector": "//a[@href='/contact']"
+      },
+      {
+        "type": "css",
+        "selector": "a[href='/contact']"
+      }
+    ]
   }
 }
