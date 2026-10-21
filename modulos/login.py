@@ -93,3 +93,29 @@ def logout_dojo(page, nombre_log, hora_ejecucion):
     escribo_log(nombre_log, "---> Cerrando sesión en UPEX Dojo...\n")
     page.get_by_test_id("nav-desktop").get_by_test_id("user-menu-button").dblclick()
     page.get_by_test_id("nav-logout-button").click()
+
+
+def abrir_pagina(page, pagina, nombre_log, hora_ejecucion):
+    try:
+        if not pagina:
+            raise ValueError("El parámetro 'pagina' no puede estar vacío.")
+
+        pagina_limpio = pagina.lower().strip()
+        mapa_paginas = {
+            "script_labs": URL_SCRIPT_LABS,
+            "qa practice": URL_QA_PRACTICE,
+            "upex dojo": URL_UPEX_DOJO
+        }
+
+        pagina_final = mapa_paginas.get(pagina_limpio)
+        if not pagina_final:
+            opciones = ", ".join(mapa_paginas.keys())
+            raise ValueError(f"Menú no reconocido: '{pagina}'. Opciones válidas: [{opciones}]")
+
+        page.goto(pagina_final)
+        page.wait_for_timeout(1000)
+
+    except Exception as e:
+        error_msg = f"err-> servicios() - Fallo al navegar a la pagina {pagina}: {str(e)}\n."
+        escribo_log(nombre_log, f"---> {error_msg}\n")
+        raise e
