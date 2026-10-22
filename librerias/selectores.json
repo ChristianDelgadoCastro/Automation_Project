@@ -2357,5 +2357,629 @@
         "selector": "//button[contains(text(), 'Pay & Confirm Booking')]"
       }
     ]
+  },
+
+  "ipt_ecom_search": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-search",
+      "class": "",
+      "text": "",
+      "placeholder": "Search for awesome products...",
+      "name": "",
+      "type": "search",
+      "role": "searchbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-search']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-search"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-search']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "Search for awesome products..."
+      }
+    ]
+  },
+  "btn_ecom_cart": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "ecom-cart-button",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-cart-button']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-cart-button"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-cart-button']"
+      }
+    ]
+  },
+  "txt_ecom_result_count": {
+    "huella_digital": {
+      "tag": "span",
+      "id": "",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-result-count']"
+      }
+    ]
+  },
+  "cnt_ecom_product_detail": {
+    "huella_digital": {
+      "tag": "div",
+      "id": "",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-product-detail']"
+      }
+    ]
+  },
+  "txt_ecom_detail_name": {
+    "huella_digital": {
+      "tag": "h2",
+      "id": "",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-detail-name']"
+      }
+    ]
+  },
+  "txt_ecom_detail_price": {
+    "huella_digital": {
+      "tag": "div",
+      "id": "",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "",
+      "role": "",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-detail-price']"
+      }
+    ]
+  },
+  "btn_ecom_proceed_to_buy": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "ecom-proceed-to-buy",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-proceed-to-buy']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-proceed-to-buy"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-proceed-to-buy']"
+      }
+    ]
+  },
+  "ipt_ecom_addr_name": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-address-name",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-address-name']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-address-name"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-address-name']"
+      }
+    ]
+  },
+  "ipt_ecom_addr_street": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-address-street",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-address-street']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-address-street"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-address-street']"
+      }
+    ]
+  },
+  "ipt_ecom_addr_city": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-address-city",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-address-city']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-address-city"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-address-city']"
+      }
+    ]
+  },
+  "ipt_ecom_addr_state": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-address-state",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-address-state']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-address-state"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-address-state']"
+      }
+    ]
+  },
+  "ipt_ecom_addr_zip": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-address-zip",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-address-zip']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-address-zip"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-address-zip']"
+      }
+    ]
+  },
+  "btn_ecom_save_address": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "ecom-save-address",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-save-address']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-save-address"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-save-address']"
+      }
+    ]
+  },
+  "ipt_ecom_card_number": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-card-number",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-card-number']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-card-number"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-card-number']"
+      }
+    ]
+  },
+  "ipt_ecom_card_expiry": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-expiry",
+      "class": "",
+      "text": "",
+      "placeholder": "MM/YY",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-expiry']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-expiry"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-expiry']"
+      },
+      {
+        "type": "get_by_placeholder",
+        "text": "MM/YY"
+      }
+    ]
+  },
+  "ipt_ecom_card_cvv": {
+    "huella_digital": {
+      "tag": "input",
+      "id": "ecom-cvv",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "text",
+      "role": "textbox",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-cvv']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-cvv"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-cvv']"
+      }
+    ]
+  },
+  "btn_ecom_buy_now": {
+    "huella_digital": {
+      "tag": "button",
+      "id": "ecom-buy-now",
+      "class": "",
+      "text": "",
+      "placeholder": "",
+      "name": "",
+      "type": "button",
+      "role": "button",
+      "title": "",
+      "ariaLabel": "",
+      "context": {
+        "prev_text": "",
+        "parent_tag": "div"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "selectores": [
+      {
+        "type": "css",
+        "selector": "[data-testid='ecom-buy-now']"
+      },
+      {
+        "type": "css",
+        "selector": "#ecom-buy-now"
+      },
+      {
+        "type": "xpath",
+        "selector": "//*[@id='ecom-buy-now']"
+      }
+    ]
   }
+
 }

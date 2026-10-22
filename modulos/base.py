@@ -38,6 +38,10 @@ def click_boton(page, boton, nombre_log, hora_ejecucion):
         "continuar a detalles de pasajeros": "btn_flight_continue_to_passengers",
         "continuar a pago": "btn_flight_continuar_pago",
         "pagar y continuar reservacion": "btn_flight_reservar",
+        "carrito": "btn_ecom_cart",
+        "proceder a comprar": "btn_ecom_proceed_to_buy",
+        "guardar direccion y continuar": "btn_ecom_save_address",
+        "comprar ahora": "btn_ecom_buy_now",
     }
 
     boton_limpio = boton.lower()
@@ -85,6 +89,7 @@ def validar_titulo(page, texto_esperado, nombre_log, hora_ejecucion):
         "#register-success",
         "#register-error",
         "#flight-booking-success",
+        "#ecom-order-success",
     ]
 
     selectores_visibles = [f"{selector}:visible" for selector in lista_titulos]
