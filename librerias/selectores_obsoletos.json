@@ -1,0 +1,48 @@
+{
+  "btn_menu_practice_sites": [
+    {
+      "fecha_falla": "2026-10-19 21:31:53",
+      "datos_obsoletos": [
+        {
+          "type": "get_by_role",
+          "role": "link",
+          "name": "Practice Sitess"
+        },
+        {
+          "type": "get_by_text",
+          "text": "Practice Sitess"
+        },
+        {
+          "type": "xpath",
+          "selector": "//a[@href='/practice-page-selectison']"
+        },
+        {
+          "type": "css",
+          "selector": "a[href='/practice-page-selectiosn']"
+        }
+      ]
+    },
+    {
+      "fecha_falla": "2026-10-19 21:33:18",
+      "datos_obsoletos": [
+        {
+          "type": "get_by_role",
+          "role": "link",
+          "name": "Practice aasdfasf"
+        },
+        {
+          "type": "get_by_text",
+          "text": "Practice asdfa"
+        },
+        {
+          "type": "xpath",
+          "selector": "//a[@href='/practice-page-asdf']"
+        },
+        {
+          "type": "css",
+          "selector": "a[href='/practice-page-selectasdfaiosn']"
+        }
+      ]
+    }
+  ]
+}
