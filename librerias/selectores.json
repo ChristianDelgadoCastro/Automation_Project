@@ -2358,7 +2358,26 @@
       }
     ]
   },
-
+  "card_producto_SL": {
+      "huella_digital": {
+        "tag": "div",
+        "id": "",
+        "class": "product-card ecommerce-product-card",
+        "text": "",
+        "placeholder": "",
+        "name": "",
+        "context": {
+          "prev_text": "",
+          "parent_tag": "div"
+        },
+        "rect": { "x": 0, "y": 0, "width": 0, "height": 0 }
+      },
+      "selectores": [
+        { "type": "css", "selector": ".product-card.ecommerce-product-card" },
+        { "type": "xpath", "selector": "//*[contains(@class, 'ecommerce-product-card')]" },
+        { "type": "css", "selector": "[class*='ecommerce-product-card']" }
+      ]
+    },
   "ipt_ecom_search": {
     "huella_digital": {
       "tag": "input",
