@@ -5,7 +5,8 @@ import time
 from playwright.sync_api import expect
 
 from helpers.self_healing import cargar_selectores, localizar_elemento
-from librerias.funciones import escribo_log, clic_condicional, existe_error_inesperado
+from librerias.funciones import escribo_log, clic_condicional, existe_error_inesperado, lista_screenshot, \
+    lista_pasos_descripcion, save_evidence
 
 selectores = cargar_selectores()
 

@@ -3,7 +3,10 @@ from behave import step
 from librerias.funciones import insumo_x_linea, escribo_log, save_evidence, lista_screenshot, \
     lista_pasos_descripcion, existe_error_inesperado
 from modulos.acceso_menus import navegacion_menu_qapractice
+from modulos.adminshop import AdminShop
 from modulos.base import obtener_catalogo_matriz
+from modulos.crudlab import CrudLab
+from modulos.labs import buscar_producto_ecommerce, Labs
 from modulos.login import login_script_labs, logout_script_labs, login_qa_practice, logout_qa_practice, login_dojo, \
     logout_dojo, abrir_pagina
 
@@ -95,3 +98,33 @@ def step_abrir_pagina(context, pagina):
         rastreo = f"err={type(err).__name__}" + f" [step_quitar_fav_todas] {str(err)}"
         existe_error_inesperado(context.page, rastreo, context.test_name, context.nombre_log, context.hora_ejecucion)
         raise
+
+
+@step('Busco el producto "{producto}" en el ecommerce')
+def step_buscar_producto(context, producto):
+    buscar_producto_ecommerce(context.nombre_log, context.page, producto, context.hora_ejecucion)
+
+
+@step('Realizo el flujo de compra del producto "{producto}" en Script Labs')
+def step_flujo_compra(context, producto):
+    Labs(context).flujo_compra(producto)
+    context.sesiones_activas['sl'] = True
+    save_evidence(context.page, context.test_name, "Compra_finalizada", context.hora_ejecucion)
+    context.lista_screenshot.extend(lista_screenshot("Compra_finalizada"))
+    context.lista_pasos_descripcion.extend(lista_pasos_descripcion("Compra finalizada"))
+
+@step('Realizo el flujo CRUD de scripts en Script Labs')
+def step_flujo_crud(context):
+    CrudLab(context).flujo_crud()
+    context.sesiones_activas['sl'] = True
+    save_evidence(context.page, context.test_name, "CRUD_finalizado", context.hora_ejecucion)
+    context.lista_screenshot.extend(lista_screenshot("CRUD_finalizado"))
+    context.lista_pasos_descripcion.extend(lista_pasos_descripcion("CRUD finalizado"))
+
+@step('Realizo el flujo de compra como administrador en Script Labs')
+def step_flujo_admin(context):
+    AdminShop(context).flujo_admin()
+    context.sesiones_activas['sl'] = True
+    save_evidence(context.page, context.test_name, "Admin_finalizado", context.hora_ejecucion)
+    context.lista_screenshot.extend(lista_screenshot("Admin_finalizado"))
+    context.lista_pasos_descripcion.extend(lista_pasos_descripcion("Admin finalizado"))
