@@ -82,8 +82,8 @@ def before_scenario(context, scenario):
     context.context_pw = context.browser.new_context(
         ignore_https_errors=True, permissions=["geolocation"],
         geolocation={"latitude": 21.1664998, "longitude": -101.6922205},
-        viewport={'width': 1920, 'height': 1080}, record_video_dir="videos",
-        record_video_size={"width": 1920, "height": 1080}
+        viewport={'width': 1369, 'height': 738}, record_video_dir="videos",
+        record_video_size={"width": 1369, "height": 738}
     )
     context.context_pw.tracing.start(screenshots=True, snapshots=True, sources=True)
     context.page = context.context_pw.new_page()
